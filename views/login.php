@@ -5,7 +5,8 @@
  * Date: 21-08-2018
  * Time: 12:52 PM
  */
-include "controller/user_controller.php";
+include '../index.php';
+include controller_path . "/news_controller.php";
     if (isset($_POST['login'])) {
         $email = $_POST['email'];
         $password = md5($_POST['password']);
@@ -27,17 +28,17 @@ include "controller/user_controller.php";
     <title> Khoa Pham</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="public/css/shop-homepage.css" rel="stylesheet">
-    <link href="public/css/my.css" rel="stylesheet">
+    <link href="../public/css/shop-homepage.css" rel="stylesheet">
+    <link href="../public/css/my.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.public/js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.../public/js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -55,7 +56,7 @@ include "controller/user_controller.php";
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"> Tin Tức</a>
+            <a class="navbar-brand" href="index.php"> Tin Tức</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -136,10 +137,10 @@ include "controller/user_controller.php";
 
 <!-- end Footer -->
 <!-- jQuery -->
-<script src="public/js/jquery.js"></script>
+<script src="../public/js/jquery.js"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="public/js/bootstrap.min.js"></script>
-<script src="public/js/my.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/js/my.js"></script>
 
 </body>
 

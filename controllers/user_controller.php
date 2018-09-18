@@ -6,7 +6,7 @@
  * Time: 11:26 PM
  */
 session_start();
-include "model/user_model.php";
+include model_path."/user_model.php";
 class user_controller {
     function register_controller($name, $email, $password) {
         $m_user = new user_model();

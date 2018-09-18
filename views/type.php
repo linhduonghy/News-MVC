@@ -5,8 +5,8 @@
  * Date: 21-08-2018
  * Time: 12:44 PM
  */
-session_start();
-include "controller/news_controller.php";
+include '../index.php';
+include controller_path . "/news_controller.php";
     $news = new news_controller();
     $menu = $news->queryMenu();
 
@@ -34,17 +34,17 @@ include "controller/news_controller.php";
     <title><?=$type_title->Ten?></title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="public/css/shop-homepage.css" rel="stylesheet">
-    <link href="public/css/my.css" rel="stylesheet">
+    <link href="../public/css/shop-homepage.css" rel="stylesheet">
+    <link href="../public/css/my.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.public/js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.../public/js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -149,7 +149,7 @@ include "controller/news_controller.php";
 
                                     <a href="detail.php?type=<?=$type_title->TenKhongDau?>&id_news=<?=$newsid->id?>">
                                         <br>
-                                        <img width="200px" height="200px" class="img-responsive" src="public/image/tintuc/<?=$newsid->Hinh?>" alt="">
+                                        <img width="200px" height="200px" class="img-responsive" src="../public/image/tintuc/<?=$newsid->Hinh?>" alt="">
                                     </a>
                                 </div>
 
@@ -188,10 +188,10 @@ include "controller/news_controller.php";
 </footer>
 <!-- end Footer -->
 <!-- jQuery -->
-<script src="public/js/jquery.js"></script>
+<script src="../public/js/jquery.js"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="public/js/bootstrap.min.js"></script>
-<script src="public/js/my.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/js/my.js"></script>
 
 </body>
 

@@ -5,8 +5,8 @@
  * Date: 21-08-2018
  * Time: 2:33 PM
  */
-include "model/news_model.php";
-include "model/paginate.php";
+include model_path."/news_model.php";
+include model_path."/paginate.php";
 class news_controller {
     function querySlide() {
         $news_controller = new news_model();

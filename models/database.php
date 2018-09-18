@@ -1,4 +1,5 @@
 <?php
+
 class database{
     public $_dbh = '';
     public $_sql = '';
